@@ -13,6 +13,7 @@ const Music = () => {
         {productsArr.map((el, i) => (
           <Item
             key={i}
+            id={el.id}
             imageUrl={el.imageUrl}
             title={el.title}
             price={el.price}
