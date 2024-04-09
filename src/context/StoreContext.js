@@ -1,5 +1,5 @@
 import React, { createContext, useState } from "react";
-import productsArr from "../assests/Assests";
+import assests from "../assests/Assests";
 
 export const StoreContext = createContext(null);
 
@@ -42,7 +42,8 @@ const StoreContextProvider = (props) => {
   };
 
   const contextValue = {
-    productsArr,
+    productsArr: assests.productsArr,
+    liveShows: assests.liveShows,
     cartList,
     setCartList,
     addToCart,
